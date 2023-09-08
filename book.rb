@@ -1,6 +1,5 @@
 class Book
-  attr_accessor :title, :author, :date, :person
-  attr_reader :rentals
+  attr_accessor :title, :author, :rentals, :date, :person
 
   def initialize(title = 'no title', author = 'no author')
     @title = title
