@@ -72,7 +72,16 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **User UI**
+- [x] **User UI**
+- [x] **Book Class**  ✅
+- [X] **Author Class**   ✅
+- [X] **CLI Interface**    ✅
+- [X] **Add Book Feature**         ✅
+- [ ] **Database Connection**     
+- [ ] **Seed Data**      
+- [ ] **CRUD Operations on Database**       
+- [ ] **Search Functionality for Books**        
+- [ ] **Update Book Feature**          
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
