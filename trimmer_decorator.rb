@@ -1,4 +1,4 @@
-require_relative 'decorator'
+require_relative 'Decorator'
 
 class TrimmerDecorator < Decorator
   def initialize(nameable, max_length = 10)
