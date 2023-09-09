@@ -25,10 +25,8 @@ def process_choice(choice, app)
     app.create_rental
   when 6
     app.list_rentals_by_person_id
-  when 7
-    puts 'Thank you for using this app!'
   else
-    puts 'Invalid option. Please enter a number between 1 and 7.'
+    puts '👋 Sorry to see you leaving..'
   end
 end
 
