@@ -1,0 +1,23 @@
+[
+  {
+    "id": 343,
+    "type": "Student",
+    "name": "muhammad",
+    "age": 44,
+    "parent_permission": true,
+    "rentals": [
+
+    ]
+  },
+  {
+    "id": 587,
+    "type": "Teacher",
+    "name": "Hassan",
+    "age": 44,
+    "specialization": "Tech",
+    "parent_permission": true,
+    "rentals": [
+
+    ]
+  }
+]
