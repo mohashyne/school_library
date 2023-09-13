@@ -1,20 +1,28 @@
-require_relative 'person'
-
 class Student < Person
-  attr_reader :classroom
+  attr_accessor :classroom
 
-  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
-    super(age, name, parent_permission: parent_permission)
+  def initialize(name:, age:, parent_permission: true)
+    super(name: name, age: age, parent_permission: parent_permission)
     @classroom = classroom
-    classroom&.add_student(self)
   end
 
   def play_hooky
-    '¯\\_(ツ)_/¯'
+    '¯(ツ)/¯'
   end
 
-  def classroom=(classroom)
+  def add_classroom(classroom)
     @classroom = classroom
-    classroom.students.push(self) unless classroom.students.include?(self)
+    @classroom = classroom.students.push(self) unless classroom.students.include?(self)
+  end
+
+  def to_hash
+    {
+      'id' => @id,
+      'type' => self.class.name,
+      'name' => @name,
+      'age' => @age,
+      'parent_permission' => @parent_permission,
+      'rentals' => @rentals.map { |rental| { 'date' => rental.date } }
+    }
   end
 end
